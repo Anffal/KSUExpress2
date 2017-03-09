@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FFFFFDFE"
+    tools:context="com.example.anfal.ksuexpress.MainActivity">
+
+    <Button
+        android:text="المشرف"
+        android:onClick="openAdminProfile"
+        android:id="@+id/button5"
+        android:alpha="0.99"
+        android:color="#834d5f"
+        android:background="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        android:layout_height="40dp"
+        android:layout_width="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:text="تنقلي بين مباني المدينة الجامعية بكل أريحية .."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textColor="#834d5f"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="29dp" />
+
+    <ImageView
+        app:srcCompat="@drawable/logo"
+        android:id="@+id/imageView3"
+        android:scaleType="fitXY"
+        android:layout_width="250dp"
+        android:layout_height="215dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp" />
+
+    <Button
+        android:text="تسجيل دخول"
+        android:color="#834d5f"
+        android:id="@+id/login"
+        android:alpha="0.65"
+        android:layout_marginBottom="40dp"
+        android:onClick="openLoginActivity"
+        android:background="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/button4"
+        android:layout_alignLeft="@+id/signup"
+        android:layout_alignStart="@+id/signup" />
+
+    <Button
+        android:text="حساب جديد"
+        android:onClick="openSignupActivity"
+        android:id="@+id/signup"
+        android:alpha="0.99"
+        android:color="#834d5f"
+        android:background="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        android:layout_height="40dp"
+        android:layout_width="150dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="17dp"
+        android:layout_above="@+id/login"
+        android:layout_alignRight="@+id/imageView3"
+        android:layout_alignEnd="@+id/imageView3" />
+
+    <Button
+        android:text="اتصل بنا"
+        android:onClick="openContact"
+        android:id="@+id/button4"
+        android:alpha="0.99"
+        android:color="#834d5f"
+        android:background="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        android:layout_height="40dp"
+        android:layout_width="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
