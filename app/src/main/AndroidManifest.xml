@@ -56,21 +56,17 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
         <activity
             android:name=".Map"
-            android:label="@string/title_activity_map"></activity>
-
+            android:label="@string/title_activity_map" />
         <activity
             android:name=".Send_notification"
             android:label="ارسال اشعار"
-            android:theme="@style/MyStyle" >
-        </activity>
-
+            android:theme="@style/MyStyle"></activity>
     </application>
 
 </manifest>
