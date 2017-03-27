@@ -12,23 +12,6 @@
     android:background="#FFFFFDFE"
     tools:context="com.example.anfal.ksuexpress.MainActivity">
 
-    <Button
-        android:text="المشرف"
-        android:onClick="openAdminProfile"
-        android:id="@+id/button5"
-        android:alpha="0.99"
-        android:color="#834d5f"
-        android:background="@android:color/darker_gray"
-        android:textSize="16sp"
-        android:textStyle="normal|bold"
-        android:layout_height="40dp"
-        android:layout_width="150dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginStart="20dp" />
-
     <TextView
         android:text="تنقلي بين مباني المدينة الجامعية بكل أريحية .."
         android:layout_width="match_parent"
@@ -45,62 +28,45 @@
         android:layout_marginTop="29dp" />
 
     <ImageView
-        app:srcCompat="@drawable/logo"
         android:id="@+id/imageView3"
+        android:layout_width="270dp"
+        android:layout_height="235dp"
+        android:layout_marginTop="18dp"
         android:scaleType="fitXY"
-        android:layout_width="250dp"
-        android:layout_height="215dp"
+        app:srcCompat="@drawable/logo"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="11dp" />
+        android:layout_centerHorizontal="true" />
 
     <Button
-        android:text="تسجيل دخول"
-        android:color="#834d5f"
         android:id="@+id/login"
-        android:alpha="0.65"
-        android:layout_marginBottom="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/signup"
+        android:layout_marginTop="12dp"
+        android:alpha="0.85"
+        android:background="@android:color/darker_gray"
+        android:color="#834d5f"
         android:onClick="openLoginActivity"
-        android:background="@android:color/darker_gray"
-        android:textSize="16sp"
-        android:textStyle="normal|bold"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:layout_above="@+id/button4"
-        android:layout_alignLeft="@+id/signup"
-        android:layout_alignStart="@+id/signup" />
+        android:text="تسجيل دخول"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
 
     <Button
-        android:text="حساب جديد"
-        android:onClick="openSignupActivity"
         android:id="@+id/signup"
-        android:alpha="0.99"
-        android:color="#834d5f"
-        android:background="@android:color/darker_gray"
-        android:textSize="16sp"
-        android:textStyle="normal|bold"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_width="150dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="17dp"
-        android:layout_above="@+id/login"
-        android:layout_alignRight="@+id/imageView3"
-        android:layout_alignEnd="@+id/imageView3" />
-
-    <Button
-        android:text="اتصل بنا"
-        android:onClick="openContact"
-        android:id="@+id/button4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="38dp"
         android:alpha="0.99"
+        android:background="#d1c1c6"
         android:color="#834d5f"
-        android:background="@android:color/darker_gray"
-        android:textSize="16sp"
-        android:textStyle="normal|bold"
-        android:layout_height="40dp"
-        android:layout_width="150dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:onClick="openSignupActivity"
+        android:text="حساب جديد"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
 
 </RelativeLayout>

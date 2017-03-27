@@ -11,22 +11,22 @@
     tools:context="com.example.anfal.ksuexpress.signup">
 
     <EditText
-        android:layout_width="260dp"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
         android:id="@+id/name"
-        android:hint="الاسم"
-        android:textColor="@color/colorPrimaryDark"
-        android:textAlignment="viewEnd"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
+        android:ems="10"
+        android:hint="الاسم"
+        android:inputType="textPersonName"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/email"
-        android:layout_alignStart="@+id/email" />
+        android:layout_alignRight="@+id/email"
+        android:layout_alignEnd="@+id/email" />
 
     <EditText
         android:id="@+id/email"
-        android:layout_width="260dp"
+        android:layout_width="270dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
@@ -40,18 +40,18 @@
         android:textColor="@color/colorPrimaryDark" />
 
     <EditText
-        android:layout_width="260dp"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
         android:id="@+id/password"
-        android:hint="كلمة المرور"
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_below="@+id/email"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/email"
         android:layout_alignStart="@+id/email"
+        android:layout_below="@+id/email"
         android:layout_marginTop="11dp"
-        android:textAlignment="viewEnd" />
+        android:ems="10"
+        android:hint="كلمة المرور"
+        android:inputType="textPassword"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/colorPrimaryDark" />
 
     <Switch
         android:text="تفعيل خصائص الكفيف"
@@ -69,27 +69,28 @@
         android:layout_alignEnd="@+id/password" />
 
     <TextView
-        android:text="تمكنك هذه الخاصية من معرفة وجود سيارة نقل حولك بإصدار صوت. وتمكنك أيضًا من معرفة مكانك بين مباني الكليات."
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:id="@+id/textView2"
-        android:layout_width="250dp"
-        android:layout_below="@+id/blindOpt"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/password"
-        android:layout_alignStart="@+id/password" />
+        android:layout_alignStart="@+id/password"
+        android:layout_below="@+id/blindOpt"
+        android:layout_marginTop="20dp"
+        android:text="تمكنك هذه الخاصية من معرفة وجود سيارة نقل حولك بإصدار صوت. وتمكنك أيضًا من معرفة مكانك بين مباني الكليات." />
 
     <Button
-        android:text="تسجيل"
         android:id="@+id/register"
-        android:onClick="register"
-        android:elevation="0dp"
-        android:background="@android:color/darker_gray"
-        android:textSize="16sp"
-        android:textStyle="normal|bold"
+        android:layout_width="270dp"
         android:layout_height="40dp"
-        android:layout_width="150dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
         android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="61dp" />
+        android:layout_marginTop="36dp"
+        android:background="@android:color/darker_gray"
+        android:elevation="0dp"
+        android:onClick="register"
+        android:text="تسجيل"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
 
 </RelativeLayout>

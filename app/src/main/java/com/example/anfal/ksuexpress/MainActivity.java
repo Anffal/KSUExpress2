@@ -22,21 +22,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+
     /** Called when the user clicks the signup button */
     public void openSignupActivity(View view) {
         Intent intent = new Intent(this, signup.class);
         startActivity(intent);
     }
 
-
-    public void openAdminProfile(View view) {
-        Intent intent = new Intent(this, Admin_profile.class);
-        startActivity(intent);
-    }
-
-    public void openContact(View view) {
-        Intent intent = new Intent(this, contact_us.class);
-        startActivity(intent);
-    }
 
 }

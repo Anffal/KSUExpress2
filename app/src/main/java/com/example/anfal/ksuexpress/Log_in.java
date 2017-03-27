@@ -1,5 +1,6 @@
 package com.example.anfal.ksuexpress;
 
+import android.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -25,4 +26,15 @@ public class Log_in extends AppCompatActivity {
         backgroundWorker newBackground = new backgroundWorker(this);
         newBackground.execute(type, un, pw);
     }
+
+    /** Called when the user clicks the forget password button */
+    public void forgetPassword(View view) {
+        AlertDialog alertDialog = new AlertDialog.Builder(this).create();
+        alertDialog.setTitle("نسيت كلمة المرور");
+        alertDialog.setMessage("لم يتم تفعيل الخاصية بعد. :$");
+        alertDialog.show();
+        //Intent intent = new Intent(this, ......class);
+        //startActivity(intent);
+    }
+
 }

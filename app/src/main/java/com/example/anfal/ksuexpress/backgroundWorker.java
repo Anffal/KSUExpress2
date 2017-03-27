@@ -76,28 +76,29 @@ public class backgroundWorker extends AsyncTask <String,Void,String> {
     @Override
     protected void onPreExecute() {
         alertDialog = new AlertDialog.Builder(context).create();
-        alertDialog.setTitle("Login status");
+        alertDialog.setTitle("تعذر تسجيل الدخول");
 
     }
 
     @Override
     protected void onPostExecute(String result) {
-        alertDialog.setMessage(result);
-        alertDialog.show();
+
         //redirect the user to suitable Activity
         if (result.contains("driver")) {
-            Intent intent = new Intent(context, contact_us.class);
+            Intent intent = new Intent(context, Map.class);
             context.startActivity(intent);
         }
         else if (result.contains("passenger")) {
-            Intent intent = new Intent(context, contact_us.class);
+            Intent intent = new Intent(context, Map.class);
             context.startActivity(intent);
         }
         else if (result.contains("admin")) {
-            Intent intent = new Intent(context, contact_us.class);
+            Intent intent = new Intent(context, Map.class);
             context.startActivity(intent);
         }
         else {
+            alertDialog.setMessage("اسم المستخدم أو كلمة المرور غير صحيحة.");
+            alertDialog.show();
             Intent intent = new Intent(context, Log_in.class);
             context.startActivity(intent);
         }

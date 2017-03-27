@@ -12,16 +12,16 @@
     tools:context="com.example.anfal.ksuexpress.Admin_profile">
 
     <EditText
+        android:id="@+id/editText9"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:ems="10"
-        android:id="@+id/editText9"
-        android:hint="البريد الإلكتروني"
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_below="@+id/editText7"
         android:layout_alignLeft="@+id/editText7"
         android:layout_alignStart="@+id/editText7"
+        android:layout_below="@+id/editText7"
+        android:ems="10"
+        android:hint="البريد الإلكتروني"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="16sp" />
 
     <EditText
@@ -65,19 +65,19 @@
         android:layout_alignParentEnd="true" />
 
     <EditText
+        android:id="@+id/editText7"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/editText7"
-        android:hint="الاسم"
-        android:textColor="@color/colorPrimaryDark"
-        android:textAlignment="viewEnd"
-        android:layout_marginTop="16dp"
-        android:textSize="16sp"
-        android:layout_below="@+id/textView3"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="الاسم"
+        android:inputType="textPersonName"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp" />
 
     <EditText
         android:layout_width="260dp"
