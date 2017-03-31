@@ -5,10 +5,12 @@ import android.location.LocationManager;
 import android.net.Uri;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 
+import com.estimote.sdk.SystemRequirementsChecker;
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
@@ -25,9 +27,11 @@ import com.google.android.gms.maps.*;
 
 public class Map extends FragmentActivity implements OnMapReadyCallback {
 
+    // This attribute for beacon notification
+    private static final String TAG = "Map";
+
     Button btnShowLocation;
     GPSTracker gps;
-
     private GoogleMap mMap;
     // ( 24.793280 ,  46.665184 )
     // University
@@ -63,6 +67,23 @@ public class Map extends FragmentActivity implements OnMapReadyCallback {
 
 
     } //end of onCreate method
+
+    /* // This method for beacon notification
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        Beacon app = (Beacon) getApplication();
+
+        if (!SystemRequirementsChecker.checkWithDefaultDialogs(this)) {
+            Log.e(TAG, "Can't scan for beacons, some pre-conditions were not met");
+            Log.e(TAG, "Read more about what's required at: http://estimote.github.io/Android-SDK/JavaDocs/com/estimote/sdk/SystemRequirementsChecker.html");
+            Log.e(TAG, "If this is fixable, you should see a popup on the app's screen right now, asking to enable what's necessary");
+        } else if (!app.isBeaconNotificationsEnabled()) {
+            Log.d(TAG, "Enabling beacon notifications");
+            app.enableBeaconNotifications();
+        }
+    } */
 
     /*public void Start_button(GoogleMap map) {
 
@@ -170,4 +191,6 @@ public class Map extends FragmentActivity implements OnMapReadyCallback {
         Intent intent = new Intent(this, contact_us.class);
         startActivity(intent);
     }
+
+
 }

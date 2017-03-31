@@ -44,7 +44,7 @@
             android:background="@android:color/darker_gray"
             android:color="#834d5f"
             android:onClick="openAdminProfile"
-            android:text="الإعدادات"
+            android:text="الملف الشخصي"
             android:textSize="16sp"
             android:textStyle="normal|bold" />
 
